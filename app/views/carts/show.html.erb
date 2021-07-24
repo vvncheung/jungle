@@ -7,7 +7,7 @@
   <% if !enhanced_cart.empty?%>
     <%= render 'showcart' %>
   <% else %>
-      <%= link_to "Your cart is empty! Click here to go back to the home page.", {contoller: 'products'}, class: 'alert alert-success' %>
+      <%= link_to "Your cart is empty! Click here to go back to the home page.", root_path(@products), class: 'alert alert-success' %>
   <% end %>
 
 </section>
