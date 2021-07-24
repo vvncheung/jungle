@@ -1,17 +1,4 @@
-<section class="cart-show">
-
-  <header class="page-header">
-    <h1>My Cart</h1>
-  </header>
-
-<<<<<<< HEAD
-  <% if !enhanced_cart.empty?%>
-    <%= render 'showcart' %>
-  <% else %>
-      <%= link_to "Your cart is empty! Click here to go back to the home page.", root_path(@products), class: 'alert alert-success' %>
-  <% end %>
-=======
-  <div class="panel panel-default items">
+<div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -32,7 +19,7 @@
             TOTAL:
           </th>
           <th>
-            $<%=cart_subtotal_cents / 100.0 %>
+            $<%= cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
@@ -55,6 +42,3 @@
       <% end %>
     </div>
   </div>
->>>>>>> origin
-
-</section>
